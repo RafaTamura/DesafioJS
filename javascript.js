@@ -59,3 +59,33 @@ function Ocultar(cont){
     }
 
 }
+function FontPret(){
+    var pfont = document.getElementById("conteudo") 
+    pfont.style.color = "white"
+}
+function FontBranc(){
+    var pfont = document.getElementById("conteudo") 
+    pfont.style.color = "black"
+}
+function BackBlack(){
+    var body = document.getElementById("back") 
+    body.style.background = "black"
+}
+function BackWhite(){
+    var body = document.getElementById("back") 
+    body.style.background = "white"
+}
+var aumento = 10
+var diminuir = 10
+var fontSize = 100
+
+function AumentaTam(){
+    var pfont = document.getElementById("conteudo")
+    fontSize = fontSize + aumento
+    pfont.style.fontSize = fontSize + "%"
+}
+function DiminuiTam(){
+    var pfont = document.getElementById("conteudo")
+    fontSize = fontSize - diminuir
+    pfont.style.fontSize = fontSize + "%"
+}
