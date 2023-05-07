@@ -89,3 +89,11 @@ function DiminuiTam(){
     fontSize = fontSize - diminuir
     pfont.style.fontSize = fontSize + "%"
 }
+function Maiuscula(){
+    var pfont = document.getElementById("conteudo")
+    pfont.style.textTransform = "uppercase"
+}
+function Minuscula(){
+    var pfont = document.getElementById("conteudo")
+    pfont.style.textTransform = "lowercase"
+}
