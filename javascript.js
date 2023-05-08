@@ -151,3 +151,20 @@ function HabilitaBotao(){
         botao.setAttribute("disabled", "true");
       }
 }
+function Formulario(){
+    var fisica = document.getElementById("fisica").checked
+    var juridica = document.getElementById("juridica").checked
+    var cpf = document.getElementById("cpf")
+    var nascimento = document.getElementById("nascimento")
+    var cnpj = document.getElementById("cnpj")
+
+    if ( fisica) {
+        cpf.removeAttribute("disabled")
+        nascimento.removeAttribute("disabled")
+        cnpj.setAttribute("disabled", "true")
+    } else if (juridica){
+        cpf.setAttribute("disabled", "true")
+        nascimento.setAttribute("disabled", "true")
+        cnpj.removeAttribute("disabled")
+    }
+}
