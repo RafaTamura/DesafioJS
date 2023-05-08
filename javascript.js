@@ -97,3 +97,46 @@ function Minuscula(){
     var pfont = document.getElementById("conteudo")
     pfont.style.textTransform = "lowercase"
 }
+function ValidSenhaComp(){
+    var senha = document.getElementById("senha").value
+    var senhaconf = document.getElementById("senhaconf").value
+    if (senha != senhaconf){
+        alert("As senhas não coincidem!")
+        return false
+    }
+    return true
+}
+function ValidCampos(){
+    var senha = document.getElementById("senha").value
+    var senhaconf = document.getElementById("senhaconf").value
+    var login = document.getElementById("login").value
+
+    if(senha == "" || senhaconf == "" || login == ""){
+        alert("Preencha todos os campos")
+        return false
+    }
+    return true
+}
+function ValidTamanhoSenha(){
+    var senha = document.getElementById("senha").value
+    if (senha.length < 6 || senha.length > 10 ){
+        alert("Digite uma senha entre 6 a 10 caracteres")
+    }
+}
+function ValidarSenha(){
+    var senha = document.getElementById("senha").value
+    var senhaconf = document.getElementById("senhaconf").value
+    var login = document.getElementById("login").value
+
+    if (senha.length < 6 || senha.length > 10 ){
+        alert("Digite uma senha entre 6 a 10 caracteres")
+    } else if(senha == "" || senhaconf == "" || login == ""){
+        alert("Preencha todos os campos")
+    } else if(senha == "" || senhaconf == "" || login == ""){
+        alert("Preencha todos os campos")
+    } else if (senha != senhaconf){
+        alert("As senhas não coincidem!")
+    } else {
+        alert("Cadastro realizado com sucesso")
+    }
+}
