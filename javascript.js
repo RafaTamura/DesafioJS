@@ -140,3 +140,14 @@ function ValidarSenha(){
         alert("Cadastro realizado com sucesso")
     }
 }
+function HabilitaBotao(){
+    var select1 = document.getElementById("select1").checked
+    var select2 = document.getElementById("select2").checked
+    var botao = document.getElementById("botao-select")
+
+    if (select1 && select2) {
+        botao.removeAttribute("disabled");
+      } else {
+        botao.setAttribute("disabled", "true");
+      }
+}
