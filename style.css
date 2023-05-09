@@ -1,0 +1,23 @@
+.menu ul li {
+    list-style: none;
+    float: left;
+    width: 10%;
+    height: 60px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+.menu a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.alinhar {
+    text-align: center;
+    font-size: 50px;
+}
+
+a{
+    font-size: 25px;
+    margin: 20px;
+}
