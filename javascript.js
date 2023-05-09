@@ -1,3 +1,4 @@
+//              Exercício 1, Exercício 2 e Exercício 3
 function Vermelho(){
     var body = document.getElementById("cor")
     var pver = document.getElementById("letra")
@@ -9,8 +10,6 @@ function Vermelho(){
     paz.style.color = "white"
     pam.style.color = "white"
     pverd.style.color = "white"
-    
-    
 }
 function Verde(){
     var body = document.getElementById("cor")
@@ -48,17 +47,31 @@ function Amarelo(){
     pam.style.color = "black"
     pverd.style.color = "black"
 }
+//*****************************************************
+//                   Exercício 4 
 function Ocultar(cont){
     var conteudo = document.getElementById(cont)
     if (conteudo.hasAttribute("hidden")){
         conteudo.removeAttribute("hidden")
     } else {
         conteudo.setAttribute("hidden", "")
-        
-
     }
-
 }
+//***************************************************
+//                      Exercício 5 
+function HabilitaBotao(){
+    var select1 = document.getElementById("select1").checked
+    var select2 = document.getElementById("select2").checked
+    var botao = document.getElementById("botao-select")
+
+    if (select1 && select2) {
+        botao.removeAttribute("disabled");
+      } else {
+        botao.setAttribute("disabled", "true");
+      }
+}
+//*****************************************************
+//                      Exercício 6, 7 e 8 
 function FontPret(){
     var pfont = document.getElementById("conteudo") 
     pfont.style.color = "white"
@@ -97,32 +110,8 @@ function Minuscula(){
     var pfont = document.getElementById("conteudo")
     pfont.style.textTransform = "lowercase"
 }
-function ValidSenhaComp(){
-    var senha = document.getElementById("senha").value
-    var senhaconf = document.getElementById("senhaconf").value
-    if (senha != senhaconf){
-        alert("As senhas não coincidem!")
-        return false
-    }
-    return true
-}
-function ValidCampos(){
-    var senha = document.getElementById("senha").value
-    var senhaconf = document.getElementById("senhaconf").value
-    var login = document.getElementById("login").value
-
-    if(senha == "" || senhaconf == "" || login == ""){
-        alert("Preencha todos os campos")
-        return false
-    }
-    return true
-}
-function ValidTamanhoSenha(){
-    var senha = document.getElementById("senha").value
-    if (senha.length < 6 || senha.length > 10 ){
-        alert("Digite uma senha entre 6 a 10 caracteres")
-    }
-}
+//**************************************************
+//                      Exercício 9 
 function ValidarSenha(){
     var senha = document.getElementById("senha").value
     var senhaconf = document.getElementById("senhaconf").value
@@ -140,17 +129,8 @@ function ValidarSenha(){
         alert("Cadastro realizado com sucesso")
     }
 }
-function HabilitaBotao(){
-    var select1 = document.getElementById("select1").checked
-    var select2 = document.getElementById("select2").checked
-    var botao = document.getElementById("botao-select")
-
-    if (select1 && select2) {
-        botao.removeAttribute("disabled");
-      } else {
-        botao.setAttribute("disabled", "true");
-      }
-}
+//******************************************************
+//                     Exercício 10    
 function Formulario(){
     var fisica = document.getElementById("fisica").checked
     var juridica = document.getElementById("juridica").checked
